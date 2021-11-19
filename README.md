@@ -40,6 +40,9 @@ Returns an array of [Aurora Events](#aurora-event).
 Returns a [Photo object](#photo).
 
 ## Resources
+* time: UTC Unix Timestamp
+* length: Number of seconds, -1 if unknown
+* kp: Integer ranging from 0-9
 
 ### Aurora Event
 ```json
@@ -56,9 +59,6 @@ Returns a [Photo object](#photo).
 ]
 ```
 
-* time: UTC Unix Timestamp
-* length: Number of seconds, -1 if unknown
-* kp: Integer ranging from 0-9
 
 ### Photo
 ```json
