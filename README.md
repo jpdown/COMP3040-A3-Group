@@ -22,7 +22,7 @@ Returns an array of [Aurora Events](#aurora-event) of length 1 denoting the next
 ```auroraapi.org/time```
 
 #### Parameters
-* **time** (int): The time an aurora occurred, formatted as a UTC Unix timestamp.
+* **time** (string): The time an aurora occurred, formatted as an ISO 8601 Date Time string.
 
 #### Returns
 Returns an array of [Aurora Events](#aurora-event).
@@ -40,7 +40,7 @@ Returns an array of [Aurora Events](#aurora-event).
 Returns a [Photo object](#photo).
 
 ## Resources
-* time: UTC Unix Timestamp
+* time: ISO 8601 Date Time string in UTC timezone
 * length: Number of seconds, -1 if unknown
 * kp: Integer ranging from 0-9
 
@@ -48,7 +48,7 @@ Returns a [Photo object](#photo).
 ```json
 [
     {
-        "time": 1637280856,
+        "time": "2021-11-19T00:07:52+00:00",
         "location": {
             "lat": 49.8951,
             "long": 97.1384
@@ -64,7 +64,7 @@ Returns a [Photo object](#photo).
 ```json
 {
     "url": "https://imagesite.com/image.png",
-    "time": 1637280856,
+    "time": "2021-11-19T00:07:52+00:00",
     "location": {
         "lat": 49.8951,
         "long": 97.1384
@@ -83,7 +83,7 @@ Returns a [Photo object](#photo).
 ```json
 [
     {
-        "time": 1637280856,
+        "time": "2021-11-19T00:07:52+00:00",
         "location": {
             "lat": 49.8951,
             "long": 97.1384
@@ -96,13 +96,13 @@ Returns a [Photo object](#photo).
 
 ### Time
 #### Request
-`https://auroraapi.org/time?time=1637280856`
+`https://auroraapi.org/time?time="2021-11-19T00:07:52+00:00"`
 
 #### Response
 ```json
 [
     {
-        "time": 1637280856,
+        "time": "2021-11-19T00:07:52+00:00",
         "location": {
             "lat": 49.8951,
             "long": 97.1384
@@ -121,7 +121,7 @@ Returns a [Photo object](#photo).
 ```json
 {
     "url": "https://imagesite.com/image.png",
-    "time": 1637280856,
+    "time": "2021-11-19T00:07:52+00:00",
     "location": {
         "lat": 49.8951,
         "long": 97.1384
