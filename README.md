@@ -36,6 +36,9 @@ Returns an array of [Aurora Events](#aurora-event).
 
 **NOTE:** `lat` and `long` must both be present, or neither present for current location.
 
+#### Returns
+Returns a [Photo object](#photo).
+
 ## Resources
 
 ### Aurora Event
@@ -50,7 +53,6 @@ Returns an array of [Aurora Events](#aurora-event).
         "length": 20,
         "kp": 2
     },
-    ...
 ]
 ```
 
