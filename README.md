@@ -5,25 +5,71 @@
 
 
 ## Endpoints
+
 ### By location
-* give location, get time of next (default to current location)
 ```auroraapi.org/location```
 
+#### Parameters
+* **lat** (float): The latitude of the location
+* **long** (float): The longitude of the location
+
+**NOTE:** `lat` and `long` must both be present, or neither present for current location.
+
+#### Returns
+Returns an array of [Aurora Events](#aurora-event) of length 1 denoting the next or current event for the given location.
+
 ### By time
-* give time, get location (default to now)
+```auroraapi.org/time```
+
+#### Parameters
+* **time** (int): The time an aurora occurred, formatted as a UTC Unix timestamp.
+
+#### Returns
+Returns an array of [Aurora Events](#aurora-event).
+
 ### Get photos
-* get photo, can give location, otherwise random
+```auroraapi.org/photo```
+
+#### Parameters
+* **lat** (float): The latitude of the location
+* **long** (float): The longitude of the location
+
+**NOTE:** `lat` and `long` must both be present, or neither present for current location.
 
 ## Resources
+
+### Aurora Event
+```json
+[
+    {
+        "time": 1637280856,
+        "location": {
+            "lat": 49.8951,
+            "long": 97.1384
+        }
+        "length": 20,
+        "kp": 2
+    },
+    ...
+]
+```
+
+* time: UTC Unix Timestamp
+* length: Number of seconds, -1 if unknown
+* kp: Integer ranging from 0-9
+
+### Photo
 ```json
 {
-    "time"
-    "location"
-    "length"
-    "kp"
+    "url": "https://imagesite.com/image.png",
+    "time": 1637280856,
+    "location": {
+        "lat": 49.8951,
+        "long": 97.1384
+    }
+    "kp": 2
 }
 ```
-    
 
 ## Sample Request
 
