@@ -2,9 +2,16 @@
 
 ## Description
 * Finding Aurora API lets us find information about past and future northern lights by taking inputs such as location and time. The northern lights aka Aurora are mesmerizing waves of light that are known for its beauty. This API provides us information such as the KP index which describes characterstics of the current aurora. 
+
+
 ## Endpoints
+### By location
 * give location, get time of next (default to current location)
+```auroraapi.org/location```
+
+### By time
 * give time, get location (default to now)
+### Get photos
 * get photo, can give location, otherwise random
 
 ## Resources
@@ -19,3 +26,5 @@
     
 
 ## Sample Request
+
+
