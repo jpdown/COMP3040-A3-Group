@@ -1,7 +1,7 @@
 # COMP3040-A3-Group
 
 ## Description
-Finding Aurora API lets us find information about past and future northern lights by taking inputs such as location and time. The northern lights, aka Aurora, are mesmerizing waves of light that are known for their beauty. This API provides us information such as the KP index, which describes characteristics of the current aurora. 
+Finding Aurora API lets us find information about past and future northern lights in Manitoba by taking inputs such as location and time. The northern lights, aka Aurora, are mesmerizing waves of light that are known for their beauty. This API provides us information such as the KP index, which describes characteristics of the current aurora. 
 
 
 ## Endpoints
@@ -10,8 +10,8 @@ Finding Aurora API lets us find information about past and future northern light
 ```auroraapi.org/location```
 
 #### Parameters
-* **lat** (float): The latitude of the location
-* **long** (float): The longitude of the location
+* **lat** (float): The latitude of the location in Manitoba
+* **long** (float): The longitude of the location in Manitoba
 
 **NOTE:** `lat` and `long` must both be present, or neither present for current location.
 
@@ -31,8 +31,8 @@ Returns an array of [Aurora Events](#aurora-event).
 ```auroraapi.org/photo```
 
 #### Parameters
-* **lat** (float): The latitude of the location
-* **long** (float): The longitude of the location
+* **lat** (float): The latitude of the location in Manitoba
+* **long** (float): The longitude of the location in Manitoba
 
 **NOTE:** `lat` and `long` must both be present, or neither present for current location.
 
