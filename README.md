@@ -73,6 +73,59 @@ Returns a [Photo object](#photo).
 }
 ```
 
-## Sample Request
+## Sample Requests
 
+### Location
+#### Request
+`https://auroraapi.org/location?lat=49.8951&long=97.1384`
 
+#### Response
+```json
+[
+    {
+        "time": 1637280856,
+        "location": {
+            "lat": 49.8951,
+            "long": 97.1384
+        }
+        "length": 20,
+        "kp": 2
+    }
+]
+```
+
+### Time
+#### Request
+`https://auroraapi.org/time?time=1637280856`
+
+#### Response
+```json
+[
+    {
+        "time": 1637280856,
+        "location": {
+            "lat": 49.8951,
+            "long": 97.1384
+        }
+        "length": 20,
+        "kp": 2
+    }
+]
+```
+
+### Photo
+#### Request
+`https://auroraapi.org/photo?lat=49.8951&long=97.1384`
+
+#### Response
+```json
+{
+    "url": "https://imagesite.com/image.png",
+    "time": 1637280856,
+    "location": {
+        "lat": 49.8951,
+        "long": 97.1384
+    }
+    "kp": 2
+}
+```
