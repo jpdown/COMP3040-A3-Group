@@ -1,7 +1,7 @@
 # COMP3040-A3-Group
 
 ## Description
-Finding Aurora API lets us find information about past and future northern lights in Manitoba by taking inputs such as location and time. The northern lights, aka Aurora, are mesmerizing waves of light that are known for their beauty. This API provides us information such as the KP index, which describes characteristics of the current aurora. 
+Finding Aurora API lets us find information about past and future northern lights in Manitoba by taking inputs such as location and time. The northern lights, aka Aurora, are mesmerizing waves of light that are known for their beauty that can be seen often during winter times. This API provides us information such as the KP index, which describes characteristics of the current aurora. 
 
 
 ## Endpoints
